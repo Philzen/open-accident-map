@@ -6,7 +6,7 @@ Offene Daten der Unfallstatistik des BKG auf einer interaktiven webbasierten Kar
 
 ## Setup System
 
-Install dependencies which been used by this project
+Install dependencies used by this project
 
 ```
 sudo apt install gnupg2
@@ -35,7 +35,7 @@ CREATE EXTENSION postgis;
 SELECT PostGIS_version();
 ```
 
-Change diretory to the path where your dump is stored
+Change directory to the path where your dump is stored
 
 ```
 sudo -i -u postgres dropdb postgis_db
@@ -95,9 +95,9 @@ WantedBy=multi-user.target
 ```
 
 
-## Setup Server
+## Setup Webserver
 
-Setup frontend webserver configuration for nginx
+Frontend webserver configuration for nginx:
 
 ```
 server {
@@ -120,7 +120,7 @@ server {
 ```
 
 
-Setup backend webserver configuration for nginx reverse proxy
+Backend webserver configuration for nginx reverse proxy:
 
 ```
 server {
@@ -192,7 +192,7 @@ server {
 }
 ```
 
-Follow the instructions from corresponding programm
+Follow the instructions of corresponding program
 
 ```
 sudo apt install nginx-full certbot python3-certbot-nginx
